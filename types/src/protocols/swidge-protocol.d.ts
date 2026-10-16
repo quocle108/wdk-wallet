@@ -253,6 +253,9 @@ export type SwidgeProtocolConfig = {
     maxProtocolFeeBps?: number | bigint;
 };
 export type SwidgeOptions = SwidgeCommonOptions & (SwidgeExactInOptions | SwidgeExactOutOptions);
+/**
+ * The options shared by exact-in and exact-out swidges.
+ */
 export type SwidgeCommonOptions = {
     /**
      * - The provider-specific identifier or address of the source token.
@@ -382,7 +385,7 @@ export type SwidgeQuote = {
      */
     toTokenAmountMin: bigint;
     /**
-     * - The maximum source amount after slippage, for exact-out operations.
+     * - The maximum source amount after slippage. Always set for exact-out operations.
      */
     fromTokenAmountMax?: bigint;
     /**

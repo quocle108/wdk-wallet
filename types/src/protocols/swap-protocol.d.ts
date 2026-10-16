@@ -112,6 +112,9 @@ export type SwapProtocolConfig = {
     swapMaxFee?: number | bigint;
 };
 export type SwapOptions = SwapCommonOptions & (SwapBuyOptions | SwapSellOptions);
+/**
+ * The options shared by exact-input and exact-output swaps.
+ */
 export type SwapCommonOptions = {
     /**
      * - The address of the token to sell.

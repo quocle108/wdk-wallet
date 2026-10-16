@@ -39,6 +39,8 @@ import { NotImplementedError } from './errors.js'
  */
 
 /**
+ * The options shared by exact-input and exact-output swaps.
+ *
  * @typedef {Object} SwapCommonOptions
  * @property {string} tokenIn - The address of the token to sell.
  * @property {string} tokenOut - The address of the token to buy.
